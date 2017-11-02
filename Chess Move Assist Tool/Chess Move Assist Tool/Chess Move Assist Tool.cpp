@@ -140,7 +140,7 @@ public:
 						break;
 					}
 
-
+					//add ambigious rank/row pawn check (aka a4b5) use convertRankChar, as it will return -1 with lowercase letters
 					if (isRow(input[1])) {
 						result.push_back(2);
 						result.push_back(convertRankChar(input[0]));
