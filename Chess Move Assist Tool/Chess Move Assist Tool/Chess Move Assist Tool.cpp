@@ -8,7 +8,7 @@ using namespace std;
 class Board
 {
 public:
-	/*int pieces[8][8] = {
+	int pieces[8][8] = {
 		{ 4, 2, 3, 5, 6, 3, 2, 4 } ,
 		{ 1, 1, 1, 1, 1, 1, 1, 1 } ,
 		{ 0, 0, 0, 0, 0, 0, 0, 0 } ,
@@ -17,9 +17,9 @@ public:
 		{ 0, 0, 0, 0, 0, 0, 0, 0 } ,
 		{ 11, 11, 11, 11, 11, 11, 11, 11 } ,
 		{ 14, 12, 13, 15, 16, 13, 12, 14 } ,
-	};*/
+	};
 	
-	
+	/*
 	int pieces[8][8] = { // test board
 		{ 0, 6, 0, 0, 0, 0, 0, 0 } ,
 		{ 11, 0, 11, 0, 0, 0, 0, 0 } ,
@@ -29,7 +29,7 @@ public:
 		{ 0, 0, 0, 0, 0, 0, 0, 0 } ,
 		{ 0, 1, 0, 1, 0, 0, 0, 0 } ,
 		{ 0, 0, 0, 0, 0, 0, 0, 0 } ,
-	};
+	};*/
 	bool whiteTurn = true;
 	bool isUserWhite = true;
 
@@ -157,7 +157,7 @@ public:
 	}
 };
 
-class Inspector
+class BaseLookout
 {
 public:
 	Board board;
@@ -165,7 +165,13 @@ public:
 	{
 		board = bd;
 	}
-	int isLegal(vector<int> move,vector<int>&start)
+	virtual int runCheck(vector<int> move, vector<int>&_return) = 0;
+};
+
+class LegalChecker : public BaseLookout
+{
+public:
+	int runCheck(vector<int> move,vector<int>&start)
 	{
 		int piece = board.get(move[move.size() - 2], move[move.size() - 1]);
 		if (board.whiteTurn && piece < 10)
@@ -198,7 +204,7 @@ public:
 				file = move[3] - 1;
 				rank = move[4] - 1;
 			}
-			else {//fix needed
+			else {
 				matchFile = move[2] - 1;
 				matchRank = move[3] - 1;
 				file = move[4] - 1;
@@ -285,7 +291,7 @@ public:
 								break;
 							}
 						}
-					}//left to right check
+					}
 					cout << "Left to right done. " << queens << " queens" << endl;
 					for (int i = 0; i < 9; i++) //bottom to top check
 					{
@@ -915,11 +921,6 @@ public:
 		return false;
 		
 	}
-	void inspectBoard()
-	{
-		vector<int> homePieces = board.getPieces(board.getUserTeam());
-
-	}
 };
 
 class Parser {
@@ -1141,7 +1142,7 @@ public:
 
 Board board;
 Parser parser;
-Inspector inspector;
+LegalChecker inspector;
 
 int main()//possible entries: a4,ba4,ka4,k1a4,kaa4,ka1a4,a8=q,ba8=q,O-O,O-O-O
  {/*move codes: 
@@ -1181,7 +1182,7 @@ int main()//possible entries: a4,ba4,ka4,k1a4,kaa4,ka1a4,a8=q,ba8=q,O-O,O-O-O
 			vector<int> processedMove = parser.parse(ans);
 			vector<int> intendedPiece;
 			inspector.updateBoard(board);
-			int response = inspector.isLegal(processedMove,intendedPiece);
+			int response = inspector.runCheck(processedMove,intendedPiece);
 			if (response == 0)
 			{
 				cout << "Illegal move, try again" << endl;
