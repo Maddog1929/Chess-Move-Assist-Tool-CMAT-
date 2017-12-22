@@ -1,18 +1,19 @@
 ﻿  Chess Move Assist Tool.cpp
 c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\termcolor\termcolor.hpp(465): warning C4800: 'long': forcing value to bool 'true' or 'false' (performance warning)
 c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\termcolor\termcolor.hpp(485): warning C4800: 'int': forcing value to bool 'true' or 'false' (performance warning)
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(271): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(313): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(403): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(417): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(459): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(501): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(532): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(546): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(637): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(651): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(729): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(743): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(841): warning C4018: '<': signed/unsigned mismatch
-c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(869): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(374): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(416): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(506): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(520): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(562): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(604): warning C4805: '==': unsafe mix of type 'int' and type 'bool' in operation
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(635): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(657): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(764): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(778): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(856): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(870): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(968): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(996): warning C4018: '<': signed/unsigned mismatch
+c:\users\user\documents\visual studio 2015\projects\chess move assist tool\chess move assist tool\chess move assist tool.cpp(1141): warning C4018: '<': signed/unsigned mismatch
   Chess Move Assist Tool.vcxproj -> C:\Users\User\Documents\Visual Studio 2015\Projects\Chess Move Assist Tool\Debug\Chess Move Assist Tool.exe
